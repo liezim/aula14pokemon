@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #18c6d3;
+}
+
+.container {
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    background: radial-gradient(circle, #e2dddd 70%, #e6e6e6 100%);
+    border-radius: 16px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    background: #ffcb05;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #ff0505;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: calc(50% - 22px);
+    margin-bottom: 10px;
+    border: 2px solid #0905ff;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #05b8ff;
+    color: #333;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #3df22c;
+}
+
+.pokemon-info {
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    border: 2px solid #051eff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.pokemon-info::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    background: #05ff44;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#pokemonImage {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto;
+    border: 4px solid #40e4d6;
+    background: #fff;
+}
+
+h2 {
+    margin: 10px 0;
+    font-size: 24px;
+    color: #333;
+}
+
+p {
+    font-size: 16px;
+    color: #333;
+    margin: 5px 0;
+}
